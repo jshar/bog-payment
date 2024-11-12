@@ -3,7 +3,7 @@
 The BOG Payment package provides seamless integration with the Bank of Georgia's payment gateway, enabling Laravel applications to process payments efficiently.
 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/nikaJshar/bog-payment.svg?style=flat-square)](https://packagist.org/packages/nikaJshar/bog-payment)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/Jshar/bog-payment.svg?style=flat-square)](https://packagist.org/packages/Jshar/bog-payment)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/nikaJshar/bog-payment/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/nikaJshar/bog-payment/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/nikaJshar/bog-payment/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/nikaJshar/bog-payment/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/nikaJshar/bog-payment.svg?style=flat-square)](https://packagist.org/packages/nikaJshar/bog-payment)
