@@ -4,9 +4,9 @@ The BOG Payment package provides seamless integration with the Bank of Georgia's
 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/Jshar/bog-payment.svg?style=flat-square)](https://packagist.org/packages/Jshar/bog-payment)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/nikaJshar/bog-payment/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/nikaJshar/bog-payment/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/nikaJshar/bog-payment/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/nikaJshar/bog-payment/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/nikaJshar/bog-payment.svg?style=flat-square)](https://packagist.org/packages/nikaJshar/bog-payment)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/Jshar/bog-payment/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/Jshar/bog-payment/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/Jshar/bog-payment/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/Jshar/bog-payment/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/Jshar/bog-payment.svg?style=flat-square)](https://packagist.org/packages/Jshar/bog-payment)
 
 ### Features
 - Payment Processing: Initiate and manage transactions through the Bank of Georgia.
@@ -18,7 +18,7 @@ The BOG Payment package provides seamless integration with the Bank of Georgia's
 You can install the package via composer:
 
 ```bash
-composer require nikaJshar/bog-payment
+composer require Jshar/bog-payment
 ```
 
 You can publish the config file with:
@@ -166,7 +166,7 @@ Add the following code to your event listener:
 ```php
 namespace App\Listeners;
 
-use NikaJshar\BogPayment\Events\TransactionStatusUpdated;
+use Jshar\BogPayment\Events\TransactionStatusUpdated;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 
@@ -177,7 +177,7 @@ use InteractsWithQueue;
     /**
      * Handle the event.
      *
-     * @param  \NikaJshar\BogPayment\Events\TransactionStatusUpdated  $event
+     * @param  \Jshar\BogPayment\Events\TransactionStatusUpdated  $event
      * @return void
      */
     public function handle(array $event)
@@ -191,7 +191,7 @@ Register the event listener in your EventServiceProvider to ensure it's triggere
 
 ```php
 protected $listen = [
-    \NikaJshar\BogPayment\Events\TransactionStatusUpdated::class => [
+    \Jshar\BogPayment\Events\TransactionStatusUpdated::class => [
         \App\Listeners\HandleTransactionStatusUpdate::class,
     ],
 ];
@@ -234,8 +234,6 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Nika Jorjoliani](https://github.com/nikaJshar)
-- [All Contributors](../../contributors)
 
 ## License
 
